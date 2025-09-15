@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAMITEX AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <img src="https://files.catbox.moe/m3dn69.png" alt="DAMITEX AI Logo" class="logo">
+    <h1>DAMITEX AI</h1>
+  </div>
+
+  <div id="chat-container">
+    <div id="chat-box"></div>
+    
+    <div id="input-container">
+      <input type="file" id="file-input" hidden onchange="handleFileUpload(event)">
+      <button onclick="document.getElementById('file-input').click()">📂</button>
+      <input type="text" id="user-input" placeholder="Type a message or /command...">
+      <button onclick="sendMessage()">➡️</button>
+      <button onclick="generateImage()">🖼️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
